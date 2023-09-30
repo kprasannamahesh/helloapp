@@ -10,3 +10,7 @@ class Posts(models.Model):
 
     def __str__(self):
         return self.text[:50]
+
+class Message(models.Model):
+    msg = models.TextField()
+    priority = models.IntegerField()
